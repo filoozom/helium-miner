@@ -1,0 +1,13 @@
+%% -*- erlang -*-
+[
+ "/opt/miner/releases/0.1.0/sys",
+ {blockchain,
+  [
+   {port, ${BLOCKCHAIN_PORT}}
+  ]},
+ {miner,
+  [
+   {radio_device, { {0,0,0,0}, ${RADIO_PORT},
+                    {127,0,0,1}, 31341} }
+  ]}
+].
